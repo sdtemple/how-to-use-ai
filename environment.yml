@@ -1,0 +1,19 @@
+name: how-to-code-with-ai
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.12
+  - numpy>=2.1.3
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - torch
+  - pytorch
+  - transformers
+  - jupyter
+  - notebook
+  - pip
+  - r-base
