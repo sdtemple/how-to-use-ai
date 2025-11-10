@@ -171,15 +171,15 @@ In my opinion, one of the best uses of AI can be writing code that plots data. I
 
 ---
 
-### Exercise 7: how long should the responses be?
+### Exercise 7: refactoring code
 
-Here, in [exercise7.py](./exercise7.py), we will modify the length of the AI-written code by adjusting the number of tokens.
+Here, in [exercise7.py](./exercise7.py), we will refactor poorly written code so that it is easier to read and follows some best coding practices. You will write your own prompts with `Ctrl + I` instead of copying and pasting the suggested prompts. My solutions are in [answers/exercise7.py](answers/exercise7.py).
 
+---
 
-### Exercise 8: refactoring code
+### Exercise 8: how long should the responses be?
 
-TBD
-
+Here, in [exercise8.py](./exercise8.py), we will modify the length of the AI-written code by adjusting the number of input tokens. You will write your own prompts with `Ctrl + I` instead of copying and pasting the suggested prompts. My solutions are in [answers/exercise8.py](answers/exercise8.py).
 
 ---
 
