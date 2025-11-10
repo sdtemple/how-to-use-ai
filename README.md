@@ -1,12 +1,18 @@
 # How to Use AI in Coding
 
-This repository contributes to a tutorial on how (and how not to) use AI for coding assistance. We will provide some starter code which comprise of various exercises. Throughout the exercises, we will write and modify code that calculates certain fun number sequences, like the Catalan numbers. The tutorials are meant to be interactive when presented live!
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+
+This repository contributes to a tutorial on how (and how not to) use AI for coding assistance. We will provide some starter code which comprise of various exercises. Throughout the exercises, we will write and modify code that calculates certain fun number sequences, like the Fibonacci numbers. The tutorials are meant to be interactive when presented live! The aim is code with AI prompting only; no coding yourself.
+
+Video tutorials are provided after the workshop [here](https://youtube.com/playlist?list=PLytKBw16MvV1_zXLpKa7AWVhudlgzGmpJ&si=Z7GdqlGvDIpiiYQR).
+
+<img src="how-to-use-ai.png" align="center" width="600px"/>
 
 Disclaimer: I am an experienced programmer, especially with Python. I am spot reading the AI-generated code to ensure that it makes sense, which is a best practice. I am role playing how to use Gen AI for beginner and intermediate programmers.
 
 ---
 
-### Favorite hot-keys
+## Favorite hot-keys
 
 Many of the hot-keys are said for a Windows OS user. If you are a Macintosh OS user, you may replace "Ctrl" with "Command". When in doubt, use a simple AI search to find the translation from Windows to Macintosh. 
 
@@ -21,7 +27,7 @@ Many of the hot-keys are said for a Windows OS user. If you are a Macintosh OS u
 - `Ctrl + X` to cut (move lines elsewhere) instead of copy
 - `Windows + V` to see clipboard of previous copied text (Windows users) 
 
-### Important buttons to click
+## Important buttons to click
 
 - `+` in chatbot window to start a new conversation
 - The clock in chatbot window to see prior conversations
@@ -35,7 +41,7 @@ Many of the hot-keys are said for a Windows OS user. If you are a Macintosh OS u
 
 ---
 
-### Installation
+## Installation
 
 These are instructions for first-time coders. If you already have VS code and a working package manager for Python (like Anaconda), you are all good.
 
@@ -55,6 +61,19 @@ These are instructions for first-time coders. If you already have VS code and a 
     - [Mamba the fast conda](https://github.com/mamba-org/mamba)
     - [The Anaconda enterprise](https://anaconda.org/)
 4. Set up a conda environment in Terminal: `conda env create -f environment.yml`
+
+---
+
+
+### Or, GitHub Codespaces
+
+
+---
+
+### Or, Google Colaboratory
+
+
+
 
 ---
 
@@ -183,7 +202,7 @@ Here, in [exercise8.py](./exercise8.py), we will modify the length of the AI-wri
 
 ---
 
-### Exercise: using an agent for data science
+### Exercise 9: using an agent for data science
 
 We are now data scientists about to analyze a new dataset. There are many columns in the dataset, and we don't know what those columns mean. I will download various datasets from Kaggle (a data science competitions website). To download, I need to have a user account and join the competitions ([smoker classification](https://www.kaggle.com/competitions/binary-prediction-of-smoker/data) and [home pricing](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data)).
 
@@ -196,14 +215,27 @@ kaggle competitions download -c house-prices-advanced-regression-techniques
 
 You can unzip the files with the Terminal command `unzip binary-prediction-of-smoker.zip`. Next, open the chatbot agent window. Type `#file:train.csv`. We will have a conversation with the agent to better understand the dataset.
 
+You can use and modify the Markdown file to provide global instructions to the AI agent in `.github/AGENTS.md`. For this exercise, I ask it to use the conda environment titled `hoodriver` and perform data analyses with specific Python packages. With the file icon, you can click to include the `.github/AGENTS.md` file in the Chat.
 
-TBD
+Now, we will interact with the agent!
+- You will be prompted to Accept or Skip certain steps in the analysis.
+- The AI agent can create and modify files. You can Keep or Undo these changes in the the Chat tab.
+- You can add additional files by clicking the file icon or typing in `#file:`.
+- I **highly** recommend that you only use the AI agent for simple data analysis tasks, like preprocessing data and fitting simple models (logistic regression).
+- One safeguard to AI agent use is to do your work in a GitHub repository that checks the updates and creation of files.
+- For now, I found that using the MCP server crashed, so I skipped those AI agent suggestions and ran in pure bash.
 
-### Exercise: tricking the agent?
+---
+
+### Exercise 10: can I trick the agent?
 
 I made a tabular data file in `make-a-dataset.py` that I called `nonsensical-dataset.csv`. The columns concern values about fruits that could be healthy or not healthy for you. However, I generated this data from random distributions! Let's see what the chatbot thinks about the data.
 
-Open the chatbot agent window (`Ctrl + Alt + I`), and type `#file:nonsensical-dataset.csv`.
+Open the chatbot agent window (`Ctrl + Alt + I`), and type `#file:nonsensical-dataset.csv`. Like in Exercise 9, we will interact with the AI agent. Once you are done exploring `#file:nonsensical-dataset.csv`, try out `#file:sensical-dataset.csv`
 
 
-TBD
+### Exercise 11: expanded demos of agent use
+
+In the future, I may make some more exercises related to agents. Presently, I refer you to GitHub and VS Code's own documentation, especially as this is a coding feature under active development. 
+
+
