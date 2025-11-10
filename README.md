@@ -8,11 +8,14 @@ Disclaimer: I am an experienced programmer, especially with Python. I am spot re
 
 ### Favorite hot-keys
 
+Many of the hot-keys are said for a Windows OS user. If you are a Macintosh OS user, you may replace "Ctrl" with "Command". When in doubt, use a simple AI search to find the translation from Windows to Macintosh. 
+
 - Click `Tab` to auto-complete some suggested code. You will see the suggested code pop up.
 - Click `Esc` to reject the suggested code.
 - Click `Ctrl + \`` to enter the Terminal window.
 - Click `Ctrl + I` to ask for the chatbot in-line. This is where you could ask the AI for some specific code to be written.
 - Click `Ctrl + Alt + I` to engage with the chatbot in a pop-up/side window. This is where you could have a conversation with the AI.
+- Click `Ctrl + /` to uncomment entire code blocks.
 - `Ctrl + Shift + P` to select certain actions/tools in VS code
 - `Ctrl + A` to grab everything in a file
 - `Ctrl + X` to cut (move lines elsewhere) instead of copy
@@ -36,6 +39,7 @@ Disclaimer: I am an experienced programmer, especially with Python. I am spot re
 
 These are instructions for first-time coders. If you already have VS code and a working package manager for Python (like Anaconda), you are all good.
 
+0. Set up the repository: `git clone https://github.com/sdtemple/how-to-use-ai.git`
 1. Download VS Code (Virtual Studio Code) from the app store (if not already installed)
 2. Download a package manager derivative of Anaconda () or Anaconda itself
     - [My instructions for mamba](https://isweep.readthedocs.io/en/latest/misc.html)
@@ -51,7 +55,7 @@ These are instructions for first-time coders. If you already have VS code and a 
 
 ## Start of tutorial
 
-First, suppose I am inexperienced at writing Markdown (this .md file). We will build this README file with AI. The hot key `Ctrl + I` is your friend! You enter an environment where you can ask an AI chatboat to help you write code. I made the following query in the chatbot box.
+Suppose I am inexperienced at writing Markdown (this .md file). We will build this README file with AI. The hot key `Ctrl + I` is your friend! You enter an environment where you can ask an AI chatboat to help you write code. I made the following query in the chatbot box.
 
 ```
 Can you write a Markdown enumerated list with titles Exercise 1, Exercise 2, up to Exercises 5 and explicit links to python files titled exercise1.py, and up to exercise3.py?
@@ -63,9 +67,15 @@ Can you write a Markdown enumerated list with titles Exercise 1, Exercise 2, up 
 
 ---
 
-#### Exercise 1: writing some Python code
+### Exercise 0:
 
-Second, suppose I am an inexperienced Python coder. I created a file called [exercise1.py](./exercise1.py). Then, I made a query in the `Ctrl + I` box about writing a few functions.
+Suppose I have never coded in Python at all. We will write simple functions to compute the mean and standard deviation from a list of numbers. In this exercise, we will learn some of the ways to prompt the AI chatbot. In Python, lines starting with \# are comment lines (no code to execute). On these comment lines, I provide example instructions that you can copy and paste into the chatbot interface.
+
+---
+
+### Exercise 1: writing some Python code
+
+Suppose I am an inexperienced Python coder. I created a file called [exercise1.py](./exercise1.py). Then, I made a query in the `Ctrl + I` box about writing a few functions.
 
 ```
 I am an amateur number theorist, and I am curious about special sequences of numbers. I would like to write a few Python functions that tell me the nth Catalan number, the nth number in the Fibonnaci sequence, and the first ten prime numbers.
@@ -89,7 +99,7 @@ I don't remember how the Catalan numbers are computed, and I don't fully underst
 
 ### Exercise 2: documenting some Python code
 
-Third, the chatbot wrote a lot of code and it provided documentation for the functions. Suppose I wrote some code fast and did not document what the code does. I copied the contents of [exercise1.py](./exercise1.py) into [exercise2.py](./exercise2.py) and deleted all the documentation. 
+The chatbot wrote a lot of code and it provided documentation for the functions. Suppose I wrote some code fast and did not document what the code does. I copied the contents of [exercise1.py](./exercise1.py) into [exercise2.py](./exercise2.py) and deleted all the documentation. 
 
 To document the code, we will tab-complete for AI suggestions and/or explicitly invoke AI assistance with `Ctrl + I`. You can use `Ctrl + I` either where your mouse cursor is or highlight some text. An example query could be:
 
@@ -141,7 +151,6 @@ After the chatbot translates the code, we will verify it in Terminal. Click `Ctr
 ---
 
 ### Exercise 5: debugging code
-
 
 We can use generative AI coding assistance to debug code. I wrote some code with bugs in [exercise5.py](./exercise5.py). First, we run `python exercise5.py` in the Terminal. We see that the 5th Catalan number is calculated as 50, whereas in [exercise1.py](./exercise1.py) and others we determined that the 5th Catalan number is 42. Additionally, we get a `TypeError` when we run our function to generate the Fibonacci sequence. 
 
