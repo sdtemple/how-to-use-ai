@@ -10,9 +10,6 @@ dependencies:
   - matplotlib
   - seaborn
   - scikit-learn
-  - torch
-  - pytorch
-  - transformers
   - jupyter
   - notebook
   - pip

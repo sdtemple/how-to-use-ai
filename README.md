@@ -67,12 +67,13 @@ These are instructions for first-time coders. If you already have VS code and a 
 
 ### Or, GitHub Codespaces
 
+Under the `Code` drop-down menu, you can select `Codespaces` and create a codespace for your forked version of the repository. You could also initiate a codespace at [https://github.com/codespaces](https://github.com/codespaces) and choose the forked version of this repository. You should be able to complete **most** of the exercises in the codespace. (The default codespace does not have R, and hence you cannot do Exercise 4. The default codespace also does not have the `kaggle` command, and hence you can do Exercise 10 but not Exercise 9.)
 
----
+You do not need to create a custom conda environment for the codespace. Because we are using standard Python packages like `numpy` and `pandas`, these are already installed.
 
-### Or, Google Colaboratory
+You may receive a warning that your account is responsible for any associated computing costs. This tutorial should not use extensive computing resources. You receive some amount of free computing per month, which should far exceed that of this tutorial. (I spent about $1 of compute to complete the exercises.)
 
-
+I received network errors when starting the codespace in the Microsoft Edge browser. This likely has to do with firewalls. I successfully entered the codespace in the Mozilla Firefox browser. 
 
 
 ---
