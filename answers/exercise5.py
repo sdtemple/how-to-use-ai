@@ -32,7 +32,7 @@ def fibonacci_v1(n):
     elif n == 1:
         return 1
     else:
-        return fibonacci_v1(n-1) + fibonacci_v1(n-2) + 1
+        return fibonacci_v1(n-1) + fibonacci_v1(n-2)
 
 def fibonacci_v2(n):
     if n <= 0:
@@ -41,7 +41,9 @@ def fibonacci_v2(n):
         return 1
     else:
         fib_list = [0, 1]
-        return fib_list[n-1] + fib_list[n-2]
+        for i in range(2, n + 1):
+            fib_list.append(fib_list[i-1] + fib_list[i-2])
+        return fib_list[n]
 
 if __name__ == "__main__":
 

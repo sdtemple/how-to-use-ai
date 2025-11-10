@@ -1,11 +1,11 @@
-from math import comb, isqrt
-from typing import List
+# Use Ctrl + I to write some Python code
+# Your instruction to the chatbot will be
+# I am an amateur number theorist, and I am curious about special sequences of numbers. 
+# I would like to write a couple of Python functions that tell me the following: 
+# the nth number in the Fibonacci sequence, and the first ten prime numbers.
 
-def catalan(n: int) -> int:
-    """Return the nth Catalan number (n >= 0). Uses Cn = binom(2n, n) / (n+1)."""
-    if n < 0:
-        raise ValueError("n must be non-negative")
-    return comb(2 * n, n) // (n + 1)
+from math import isqrt
+from typing import List
 
 def fibonacci(n: int) -> int:
     """Return the nth Fibonacci number with fibonacci(0)=0, fibonacci(1)=1 (n >= 0)."""
@@ -40,6 +40,5 @@ def first_ten_primes() -> List[int]:
 
 if __name__ == "__main__":
     # Example usage
-    print("Catalan(0..10):", [catalan(i) for i in range(11)])
     print("Fibonacci(0..10):", [fibonacci(i) for i in range(11)])
     print("First ten primes:", first_ten_primes())

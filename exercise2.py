@@ -13,13 +13,12 @@
 # or start typing if __name__ == "__main__": 
 # which will clue it in to suggest example usages.
 
+# For extra clout/credit, try suggesting that the docstrings
+# are written so that the package doctest can test them for correctness.
+# You can then run `python make-unit-tests.py` to run the tests.
+
 from math import comb, isqrt
 from typing import List
-
-def catalan(n):
-    if n < 0:
-        raise ValueError("n must be non-negative")
-    return comb(2 * n, n) // (n + 1)
 
 def fibonacci(n):
     if n < 0:
