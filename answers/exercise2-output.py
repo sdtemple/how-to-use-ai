@@ -1,33 +1,20 @@
+# Use AI to document some Python code.
+
+# Put your cursor on a function.
+# It is possible that the AI will suggest a docstring,
+# which you can accept via tab-complete.
+# You can also edit the docstring as needed.
+# If the AI is not suggesting something,
+# use Ctrl + I to invoke the AI to suggest a docstring,
+# or start typing """ which will clue it in to suggest a docstring.
+
+# At the bottom of the file,
+# use Ctrl + I to write example usages of the functions,
+# or start typing if __name__ == "__main__": 
+# which will clue it in to suggest example usages.
+
 from math import comb, isqrt
 from typing import List
-
-def catalan(n: int) -> int:
-    """
-    Compute the nth Catalan number.
-
-    Parameters
-    ----------
-    n : int
-        Non-negative integer index (n >= 0).
-
-    Returns
-    -------
-    int
-        The nth Catalan number.
-
-    Examples:
-    >>> catalan(0)
-    1
-    >>> catalan(1)
-    1
-    >>> catalan(2)
-    2
-    >>> catalan(3)
-    5
-    """
-    if n < 0:
-        raise ValueError("n must be non-negative")
-    return comb(2 * n, n) // (n + 1)
 
 def fibonacci(n: int) -> int:
     """
@@ -121,7 +108,6 @@ def first_ten_primes() -> List[int]:
 
 if __name__ == "__main__":
     # Example usages of the functions
-    print("5th Catalan number:", catalan(5))
     print("10th Fibonacci number:", fibonacci(10))
     print("Is 97 prime?", is_prime(97))
     print("First ten prime numbers:", first_ten_primes())

@@ -16,11 +16,6 @@
 from math import comb, isqrt
 from typing import List
 
-def catalan(n):
-    if n < 0:
-        raise ValueError("n must be non-negative")
-    return comb(2 * n, n) // (n + 1)
-
 def fibonacci(n):
     if n < 0:
         raise ValueError("n must be non-negative")

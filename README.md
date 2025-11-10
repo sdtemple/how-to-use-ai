@@ -39,17 +39,22 @@ Many of the hot-keys are said for a Windows OS user. If you are a Macintosh OS u
 
 These are instructions for first-time coders. If you already have VS code and a working package manager for Python (like Anaconda), you are all good.
 
-0. Set up the repository: `git clone https://github.com/sdtemple/how-to-use-ai.git`
-1. Download VS Code (Virtual Studio Code) from the app store (if not already installed)
-2. Download a package manager derivative of Anaconda () or Anaconda itself
-    - [My instructions for mamba](https://isweep.readthedocs.io/en/latest/misc.html)
-    - [Mamba the fast conda](https://github.com/mamba-org/mamba)
-    - [The Anaconda enterprise](https://anaconda.org/)
-3. Set up a conda environment in Terminal: `conda env create -f environment.yml`
-4. Connect your VS Code to a GitHub account (especially Pro versions) for AI help
+0. Download VS Code (Virtual Studio Code) from the app store (if not already installed)
+1. Connect your VS Code to a GitHub account (especially Pro versions) for AI help
     - Sign up for an account at [github.com](https://www.github.com)
     - Students can get a free/discounted Pro version with an *edu email address [here](https://education.github.com/pack)
     - Connecting Copilot with VS code [here](https://code.visualstudio.com/docs/copilot/setup) 
+2. Set up the repository:
+    - On GitHub, fork [https://github.com/sdtemple/how-to-use-ai](https://github.com/sdtemple/how-to-use-ai). This is a button you click.
+    - In VS Code, you can enter the Terminal with the hot-key `Ctrl \``.
+    - On the Terminal, run `git clone https://github.com/your-username/how-to-use-ai.git`
+    - Create a branch for your answers `git checkout -b my-answers`
+    - Finally, `git push --set-upstream origin my-answers`
+3. Download a package manager derivative of Anaconda () or Anaconda itself
+    - [My instructions for mamba](https://isweep.readthedocs.io/en/latest/misc.html)
+    - [Mamba the fast conda](https://github.com/mamba-org/mamba)
+    - [The Anaconda enterprise](https://anaconda.org/)
+4. Set up a conda environment in Terminal: `conda env create -f environment.yml`
 
 ---
 
