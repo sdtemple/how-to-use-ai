@@ -18,7 +18,7 @@ Many of the hot-keys are said for a Windows OS user. If you are a Macintosh OS u
 
 - Click `Tab` to auto-complete some suggested code. You will see the suggested code pop up.
 - Click `Esc` to reject the suggested code.
-- Click `Ctrl + \`` to enter the Terminal window.
+- Click `Ctrl + backtick` to enter the Terminal window.
 - Click `Ctrl + I` to ask for the chatbot in-line. This is where you could ask the AI for some specific code to be written.
 - Click `Ctrl + Alt + I` to engage with the chatbot in a pop-up/side window. This is where you could have a conversation with the AI.
 - Click `Ctrl + /` to uncomment entire code blocks.
@@ -52,7 +52,7 @@ These are instructions for first-time coders. If you already have VS code and a 
     - Connecting Copilot with VS code [here](https://code.visualstudio.com/docs/copilot/setup) 
 2. Set up the repository:
     - On GitHub, fork [https://github.com/sdtemple/how-to-use-ai](https://github.com/sdtemple/how-to-use-ai). This is a button you click.
-    - In VS Code, you can enter the Terminal with the hot-key `Ctrl \``.
+    - In VS Code, you can enter the Terminal with the hot-key `Ctrl + backtick`.
     - On the Terminal, run `git clone https://github.com/your-username/how-to-use-ai.git`
     - Create a branch for your answers `git checkout -b my-answers`
     - Finally, `git push --set-upstream origin my-answers`
@@ -105,7 +105,8 @@ Suppose I have never coded in Python at all. We will write simple functions to c
 Suppose I am an inexperienced Python coder. I created a file called [exercise1.py](./exercise1.py). Then, I made a query in the `Ctrl + I` box about writing a few functions.
 
 ```
-I am an amateur number theorist, and I am curious about special sequences of numbers. I would like to write a few Python functions that tell me the nth Catalan number, the nth number in the Fibonnaci sequence, and the first ten prime numbers.
+I am an amateur number theorist, and I am curious about special sequences of numbers. I would like to write a couple of Python functions that tell me the following: the nth number in the Fibonacci sequence, and the first ten prime numbers.
+
 ```
 
 The chatbot wrote 45 lines of code that I accepted. At the bottom of the script, it provided the following code that will output some examples to the Terminal.
@@ -113,20 +114,19 @@ The chatbot wrote 45 lines of code that I accepted. At the bottom of the script,
 ```
 if __name__ == "__main__":
     # Example usage
-    print("Catalan(0..10):", [catalan(i) for i in range(11)])
     print("Fibonacci(0..10):", [fibonacci(i) for i in range(11)])
     print("First ten primes:", first_ten_primes())
 ```
 
 We will open the Terminal and run `python exercise1.py` to see what the functions output. I am lazy, so I will write `python exer` and then hit `Tab` to tab-complete the file name. The output was the following.
 
-I don't remember how the Catalan numbers are computed, and I don't fully understand the Python code. I right-clicked in the [exercise1.py](./exercise1.py) file and scrolled down to `Explain`. A pop-up window provided me the option to have various lines of code explained. I can look up [Catalan numbers](https://en.wikipedia.org/wiki/Catalan_number) on Wikipedia to verify that some of the first Catalan numbers.
+I don't remember how the Fiboncci numbers are computed, and I don't fully understand the Python code. I right-clicked in the [answers/exercise1.py](answers/exercise1.py) file and scrolled down to `Explain`. A pop-up window provided me the option to have various lines of code explained. I can look up the [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_sequence) on Wikipedia to verify that some of the first Fibonacci numbers numbers.
 
 ---
 
 ### Exercise 2: documenting some Python code
 
-The chatbot wrote a lot of code and it provided documentation for the functions. Suppose I wrote some code fast and did not document what the code does. I copied the contents of [exercise1.py](./exercise1.py) into [exercise2.py](./exercise2.py) and deleted all the documentation. 
+The chatbot wrote a lot of code and it provided documentation for the functions. Suppose I wrote some code fast and did not document what the code does. I copied the contents of [answers/exercise1.py](answers/exercise1.py) into [exercise2.py](./exercise2.py) and deleted all the documentation. 
 
 To document the code, we will tab-complete for AI suggestions and/or explicitly invoke AI assistance with `Ctrl + I`. You can use `Ctrl + I` either where your mouse cursor is or highlight some text. An example query could be:
 
@@ -138,7 +138,7 @@ Please write a docstring for this function that describes what the function does
 
 ### Exercise 3: rewriting some Python code
 
-There are multiple ways to generate prime numbers. I copied the code in [exercise1.py](./exercise1.py) and deleted the Catalan number and Fibonacci sequence functions. 
+There are multiple ways to generate prime numbers. I copied the code in [answers/exercise1.py](answers/exercise1.py) and deleted the Fibonacci sequence function. 
 
 To rewrite the code with different techniques to generate prime numbers, we will use `Ctrl + I` over highlighted text. The first instruction for the chatbot will be: 
 
@@ -153,7 +153,7 @@ The second instruction will write code to check if the two different implementat
 Please write two functions that generate the first ten prime numbers with either the sieves of Atkin or Eratosthenes. Write the if __name__ == "__main__" code to verify that the two sieve implementations provide the same first ten prime numbers.
 ```
 
-Finally, open the Terminal with `Ctrl + \`` and run `python exercise3.py` to verify that the prime number sequences match.
+Finally, open the Terminal with `Ctrl + backtick` and run `python exercise3.py` to verify that the prime number sequences match.
 
 ---
 
@@ -165,7 +165,7 @@ We can use generative AI coding assistance to translate between programming lang
 I am an experienced Python programmer, and therefore implemented my code in Python. However, I have collaborators who prefer R. And, eventually, we will use some R packages in this project that are not available in Python. Please translate the following Python code into R code.
 ```
 
-After the chatbot translates the code, we will verify it in Terminal. Click `Ctrl + \`` and then run `Rscript exercise4.R`. We will compare the result to our Python code. Run `python exercise3.py` in the Terminal.
+After the chatbot translates the code, we will verify it in Terminal. Click `Ctrl + backtick` and then run `Rscript exercise4.R`. We will compare the result to our Python code. Run `python exercise3.py` in the Terminal.
 
 Next, we will convert the Python code to C++ code. The instruction to the chatbot in the `exercise4.cpp` file will be:
 
@@ -173,13 +173,13 @@ Next, we will convert the Python code to C++ code. The instruction to the chatbo
 I am an experienced Python programmer, and therefore implemented my code in Python. However, I have collaborators who prefer C++ because it can be faster or more memory efficient.Please translate the following Python code into C++ code.
 ```
 
-After the chatbot translates the code, we will verify it in Terminal. Click `Ctrl + \`` and then run `g++ exercise4.cpp -o exercise4` to compile the program. Following compilation, run `./exercise4` and compare to the prior results. You will not be able to compile if you do not have a compiler like `g++`.
+After the chatbot translates the code, we will verify it in Terminal. Click `Ctrl + backtick` and then run `g++ exercise4.cpp -o exercise4` to compile the program. Following compilation, run `./exercise4` and compare to the prior results. You will not be able to compile if you do not have a compiler like `g++`.
 
 ---
 
 ### Exercise 5: debugging code
 
-We can use generative AI coding assistance to debug code. I wrote some code with bugs in [exercise5.py](./exercise5.py). First, we run `python exercise5.py` in the Terminal. We see that the 5th Catalan number is calculated as 50, whereas in [exercise1.py](./exercise1.py) and others we determined that the 5th Catalan number is 42. Additionally, we get a `TypeError` when we run our function to generate the Fibonacci sequence. 
+We can use generative AI coding assistance to debug code. I wrote some code with bugs in [exercise5.py](./exercise5.py). First, we run `python exercise5.py` in the Terminal. We see that the function `fibonacci_v1()` has the wrong outputs compared to our implementation in [answers/exercise1.py](answers/exercise1.py). Additionally, we get a `list index error` when we run the function `fibonacci_v2()` to generate the nth Fibonacci number. 
 
 1. Highlight the different code blocks and ask the chatbot to explain the error and fix it.
 2. Run `python exercise5.py` on the saved file.
