@@ -4,7 +4,7 @@
 
 This repository contributes to a tutorial on how (and how not to) use AI for coding assistance. We will provide some starter code which comprise of various exercises. Throughout the exercises, we will write and modify code that calculates certain fun number sequences, like the Fibonacci numbers. The tutorials are meant to be interactive when presented live! The aim is code with AI prompting only; no coding yourself.
 
-Video tutorials are provided after the workshop [here](https://youtube.com/playlist?list=PLytKBw16MvV1_zXLpKa7AWVhudlgzGmpJ&si=Z7GdqlGvDIpiiYQR).
+The recorded video is available after the tutorial [here](https://www.youtube.com/watch?v=Z70U8VvKVj0).
 
 <img src="how-to-use-ai.png" align="center" width="600px"/>
 
